@@ -1,6 +1,5 @@
 require 'uri'
 require 'time'
-require 'sinatra/base'
 require 'active_record'
 require 'logger'
 
