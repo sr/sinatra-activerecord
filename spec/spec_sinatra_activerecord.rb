@@ -1,4 +1,4 @@
-root = File.expand_path(File.dirname(__FILE__) + '/..') 
+root = File.expand_path(File.dirname(__FILE__) + '/..')
 $: << "#{root}/lib"
 
 require 'sinatra/base'
