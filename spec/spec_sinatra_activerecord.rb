@@ -11,7 +11,7 @@ end
 
 describe 'A Sinatra app with ActiveRecord extensions' do
   before {
-    File.unlink 'test.db' rescue nil
+    File.unlink 'test.db' if File.exists? 'test.db'
     ENV.delete('DATABASE_URL')
     @app = Class.new(MockSinatraApp)
     #@app.set :migrations_log, File.open('/dev/null', 'wb')
