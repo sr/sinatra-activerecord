@@ -3,6 +3,7 @@ $: << "#{root}/lib"
 
 require 'sinatra/base'
 require 'sinatra/activerecord'
+require 'test/spec'
 
 class MockSinatraApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
