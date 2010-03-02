@@ -17,7 +17,7 @@ describe 'A Sinatra app with ActiveRecord extensions' do
     #@app.set :migrations_log, File.open('/dev/null', 'wb')
   }
 
-  it 'exposes the Sequel database object' do
+  it 'exposes the ActiveRecord::Base database object' do
     @app.should.respond_to :database
   end
 
